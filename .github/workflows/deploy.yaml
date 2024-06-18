@@ -1,0 +1,40 @@
+name: Simple Deployment Workflow
+
+on:
+  push:
+    branches:
+      - main  # Adjust to the branch you want to deploy from
+
+jobs:
+  deploy-dev:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Deploy to Dev
+        run: |
+          echo "Simulating deployment to Dev environment..."
+          # Add your actual deployment commands or scripts here
+
+  deploy-staging:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Deploy to Staging
+        run: |
+          echo "Simulating deployment to Staging environment..."
+          # Add your actual deployment commands or scripts here
+
+  deploy-production:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Deploy to Production
+        run: |
+          echo "Simulating deployment to Production environment..."
+          # Add your actual deployment commands or scripts here
