@@ -8,6 +8,7 @@ on:
 jobs:
   deploy-dev:
     runs-on: ubuntu-latest
+    environment: dev
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -18,7 +19,9 @@ jobs:
           # Add your actual deployment commands or scripts here
 
   deploy-staging:
+    needs: deploy-dev
     runs-on: ubuntu-latest
+    environment: stg
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -29,6 +32,8 @@ jobs:
           # Add your actual deployment commands or scripts here
 
   deploy-production:
+    needs: deploy-dev
+    environment: prod
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
