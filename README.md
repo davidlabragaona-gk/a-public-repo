@@ -10,3 +10,6 @@ hello new line
 
 Hello Mohammed
 how are you?
+
+Adding a new line
+new line
