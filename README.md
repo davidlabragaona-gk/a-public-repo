@@ -17,3 +17,8 @@ new line
 a new line has been added
 another line added
 a third line added
+
+This is a new line
+
+this is a second line for the demo
+
