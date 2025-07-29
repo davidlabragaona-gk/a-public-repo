@@ -27,4 +27,7 @@ another line
 
 Adding a new line
  adding another line
+
+ Adding a new line here.
  
+New feature request.
