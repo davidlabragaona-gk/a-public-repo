@@ -30,3 +30,4 @@ Adding a new line
 
  Adding a new line here.
  
+New feature request.
